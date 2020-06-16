@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+    {% if not info_submitted %}
+        <form action="" method="POST">
+            <input type="text" name="new_id">
+            <input type="password" name="new_pw">
+            <input type="password" name="confirm_pw">
+            <button>Submit</button>
+        </form>
+    {% endif %}
+
+    {% if info_submitted%}
+        <div>{{message}}</div>
+    {% endif %}
+    <a href="/">back to homepage</a>
+</body>
+</html>

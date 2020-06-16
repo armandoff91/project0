@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #login {
+        position: fixed;
+        top: 2px;
+        width: 100%;
+        z-index: 1;
+        background-color: blue;
+        }
+        .input {
+        float: left;
+        position: relative;
+        top: 20px;
+        height: 10000px;
+        width: 50%;
+        background-color: green;
+        }
+        .output {
+        float: right;
+        position: relative;
+        top: 20px;
+        height: 10000px;
+        width: 50%;
+        background-color: orange;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Look up tool</title>
+</head>
+<body>
+    <div id="login"><form action="" method="post">
+        <input type="text" name="acc_id" placeholder="Account name:">
+        <input type="password" name="acc_pw" placeholder="Password:">
+        <button>login (work in progress)</button>
+    </form></div>
+    <div class="output">
+        <div>{{output}}</div>
+        <ul>
+            {% for note in notes %}
+            <li>{{note}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="input">
+        <form action="" method="post">
+          <input type="text" name="input" placeholder="Enter Your input">
+          <button>Translate</button>
+        </form>
+    </div>
+    <a href="/">back to homepage</a>
+</html>

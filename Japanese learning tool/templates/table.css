@@ -1,0 +1,64 @@
+@media (max-width: 1000px) {
+    .spine {
+    display: none;
+    }
+    .head {
+    display: none;
+    }
+    #thirdrow {
+    display: none;
+    }
+}
+
+@media {
+    table{
+    width: 100%;
+    }
+}
+
+table {
+    text-align: center;
+    border: 2px solid black;
+}
+
+
+td {
+    background-color: green;
+}
+
+
+.head {
+    background-color: rgb(102, 204, 255);
+}
+
+
+.spine {
+    background-color: rgb(255, 204, 102);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.hira {
+    background-color: rgb(255, 204, 204);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.blank{
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.kata {
+    background-color: rgb(255, 204, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.roman {
+    background-color: rgb(204, 204, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+}
